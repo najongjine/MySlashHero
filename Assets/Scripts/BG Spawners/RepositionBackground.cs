@@ -17,7 +17,7 @@ public class RepositionBackground : MonoBehaviour
     private void Awake()
     {
         backgrounds = GameObject.FindGameObjectsWithTag(bgTag);
-        offsetValue = backgrounds[0].GetComponent<BoxCollider2D>().bounds.size.x;
+        offsetValue = backgrounds[0].GetComponent<BoxCollider2D>().bounds.size.x-0.1f;
         highestXPosition= backgrounds[0].transform.position.x;
         for(int i=0;i<backgrounds.Length; i++)
         {
