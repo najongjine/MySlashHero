@@ -362,6 +362,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6261560700747645260}
   - component: {fileID: 6261560700747645261}
+  - component: {fileID: 2058654046}
+  - component: {fileID: 6261560701206271193}
   m_Layer: 0
   m_Name: Nut
   m_TagString: Untagged
@@ -438,6 +440,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2058654046
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261560700747645262}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 3
+--- !u!114 &6261560701206271193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261560700747645262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f3d7019428b6745becda18ebba2ae6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 200
+  minZRotation: -0.7
+  maxZRotation: 0.7
 --- !u!1 &6261560700998081618
 GameObject:
   m_ObjectHideFlags: 0
