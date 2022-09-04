@@ -11,5 +11,12 @@ public class Collector : MonoBehaviour
             //Destroy(collision.gameObject);
             collision.gameObject.SetActive(false);
         }
+        if (collision.CompareTag(TagManager.OBSTACLE_TAG) || collision.CompareTag(TagManager.ENEMY_TAG)
+           || collision.CompareTag(TagManager.HEALTH_TAG))
+        {
+            //Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
+        }
+
     }
 }

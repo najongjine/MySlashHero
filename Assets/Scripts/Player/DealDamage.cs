@@ -13,12 +13,14 @@ public class DealDamage : MonoBehaviour
         {
             if (deactivateGameObject)
             {
-                gameObject.SetActive(false);
+                Debug.Log($"## player collided");
+                collision.gameObject.SetActive(false);
             }
         }
         if (collision.gameObject.tag == TagManager.ENEMY_TAG || collision.gameObject.tag == TagManager.OBSTACLE_TAG)
         {
-            gameObject.SetActive(false);
+            Debug.Log($"## enemy collided");
+            collision.gameObject.SetActive(false);
         }
     }
 }

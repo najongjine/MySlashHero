@@ -9,6 +9,7 @@ TagManager:
   - Tree2
   - Enemy
   - Obstacle
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1972568369
+    locked: 0
+  - name: UI
+    uniqueID: 1162245089
     locked: 0
