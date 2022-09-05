@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Obstacle
   - Health
+  - GameplayController
+  - HealthBarHolder
   layers:
   - Default
   - TransparentFX

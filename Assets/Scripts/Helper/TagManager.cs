@@ -51,4 +51,7 @@ public static class TagManager
     // 0 data not initialized, 1 data initialized
     public static string DATA_INITIALIZED = "Data Initialized";
 
+    public static string BGVloume = "BGVloume";
+    public static string FXVloume = "FXVloume";
+
 }

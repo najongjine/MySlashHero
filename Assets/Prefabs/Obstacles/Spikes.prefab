@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7886460239851309690}
   - component: {fileID: 7886460239851309687}
   - component: {fileID: 7886460239851309686}
+  - component: {fileID: 7920777627791217897}
+  - component: {fileID: -5772800629879739161}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Obstacle
@@ -133,3 +135,29 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4070265, y: 0.83830905}
   m_EdgeRadius: 0
+--- !u!114 &7920777627791217897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886460239851309691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8aad1757c8804409b95d0753dfa30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deactivateGameObject: 1
+--- !u!114 &-5772800629879739161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7886460239851309691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d649fbc28f08114eb51da48340925fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyEnemy: 0

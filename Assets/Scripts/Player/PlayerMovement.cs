@@ -88,6 +88,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 attackTimer = Time.time+attackWaitTime;
                 canAttack = true;
+                MySoundManager.instance.fxSource.PlayOneShot(MySoundManager.instance.slashClip);
             }
         }
     }

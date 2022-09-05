@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5018399723313971638}
   - component: {fileID: 5018399723313971595}
   - component: {fileID: 5018399723313971594}
+  - component: {fileID: -357290812960940244}
   m_Layer: 0
   m_Name: blade_3
   m_TagString: Obstacle
@@ -128,3 +129,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d31f75c47fdb6f46b038908f1127dd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-357290812960940244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018399723313971639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d649fbc28f08114eb51da48340925fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyEnemy: 0

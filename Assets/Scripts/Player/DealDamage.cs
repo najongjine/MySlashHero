@@ -11,16 +11,18 @@ public class DealDamage : MonoBehaviour
     {
         if (collision.gameObject.tag == TagManager.PLAYER_TAG)
         {
+            collision.GetComponent<PlayerHealth>().SubtractHealth();
             if (deactivateGameObject)
             {
                 Debug.Log($"## player collided");
-                collision.gameObject.SetActive(false);
+                gameObject.SetActive(false);
             }
         }
         if (collision.gameObject.tag == TagManager.ENEMY_TAG || collision.gameObject.tag == TagManager.OBSTACLE_TAG)
         {
             Debug.Log($"## enemy collided");
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
+            collision.GetComponent<EnemyHealth>().TakeDamage();
         }
     }
 }

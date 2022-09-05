@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
 
     private void Awake()
     {
-        FindPlayerReference();
+        //FindPlayerReference();
     }
 
     // Start is called before the first frame update

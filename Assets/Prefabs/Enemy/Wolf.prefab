@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 5884557334722457549}
   - component: {fileID: 5884557334722457550}
   - component: {fileID: 2123685832}
+  - component: {fileID: 3553343163268125899}
   m_Layer: 9
   m_Name: Wolf
   m_TagString: Enemy
@@ -303,3 +304,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageCollider: {fileID: 551011776}
+--- !u!114 &3553343163268125899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884557334722457545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d649fbc28f08114eb51da48340925fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyEnemy: 0
