@@ -14,9 +14,22 @@ public class MainMenuController : MonoBehaviour
 
     CharacterSelectMenu charSelectMenu;
 
+    [SerializeField]
+    Image musicImg;
+
+    [SerializeField]
+    Sprite musicOnSprite,musicOffSprite;
     private void Awake()
     {
         charSelectMenu = GetComponent<CharacterSelectMenu>();
+        if (DataManager.GetData(TagManager.MUSIC_DATA)==1)
+        {
+            musicImg.sprite = musicOnSprite;
+        }
+        else
+        {
+            musicImg.sprite = musicOffSprite;
+        }
     }
 
     // Start is called before the first frame update
@@ -47,6 +60,21 @@ public class MainMenuController : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(TagManager.GAMEPLAY_SCENE_NAME);
+    }
+    public void TurnMusicOnOrOff()
+    {
+        if (DataManager.GetData(TagManager.MUSIC_DATA) == 1)
+        {
+            DataManager.SaveData(TagManager.MUSIC_DATA,0);
+            musicImg.sprite = musicOffSprite;
+            SoundManager.instance.StopBGMusic();
+        }
+        else
+        {
+            DataManager.SaveData(TagManager.MUSIC_DATA, 1);
+            musicImg.sprite = musicOnSprite;
+            SoundManager.instance.PlayBGMusic(false);
+        }
     }
 
 }

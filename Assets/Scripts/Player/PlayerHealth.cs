@@ -52,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.tag==TagManager.HEALTH_TAG)
         {
+            SoundManager.instance.Play_CollectableSound_Sound();
             AddHealth();
             collision.gameObject.SetActive(false);
         }

@@ -32,6 +32,7 @@ public class GameOverController : MonoBehaviour
     }
     public void GameOverShowPanel()
     {
+        SoundManager.instance.Play_GameOver_Sound();
         Time.timeScale = 0;
         scoreCounter.CanCountScore = false;
         gameOverCanvas.enabled = true;

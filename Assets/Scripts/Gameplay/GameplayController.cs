@@ -33,6 +33,7 @@ public class GameplayController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         // value will be 0 if not initailized
         int gameData = DataManager.GetData(TagManager.DATA_INITIALIZED);
 
@@ -45,6 +46,7 @@ public class GameplayController : MonoBehaviour
             DataManager.SaveData(TagManager.CHARACTER_DATA+"0", 1);
             DataManager.SaveData(TagManager.CHARACTER_DATA + "1", 0);
             DataManager.SaveData(TagManager.CHARACTER_DATA + "2", 0);
+            DataManager.SaveData(TagManager.MUSIC_DATA, 1);
             DataManager.SaveData(TagManager.DATA_INITIALIZED, 1);
         }
         else if (gameData==1)
@@ -62,13 +64,16 @@ public class GameplayController : MonoBehaviour
     }
     void OnSceneLoaded(Scene scene,LoadSceneMode sceneMode)
     {
-        if (scene.name==TagManager.GAMEPLAY_SCENE_NAME)
+        if (scene.name == TagManager.GAMEPLAY_SCENE_NAME)
         {
             Instantiate(player[selectedCharacter]);
             Camera.main.GetComponent<CameraFollow>().FindPlayerReference();
         }
+        
+        /*
         MySoundManager.instance.CheckWhatBGToPlay();
         MySoundManager.instance.bgSource.Play();
+        */
     }
     public void CheckToUnlockCharacter(int score)
     {
